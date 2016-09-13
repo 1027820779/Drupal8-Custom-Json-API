@@ -1,0 +1,12 @@
+article_json_index:
+  path: /article_json/index/{ID}
+  defaults:
+    _controller: Drupal\article_json\Controller\ArticleJsonController::index
+  requirements:
+    _permission: 'access content'
+article_json_index.article_list:
+  path: /article_json/article_list
+  defaults:
+    _controller: Drupal\article_json\Controller\ArticleJsonController::article_list
+  requirements:
+    _permission: 'access content'
